@@ -1,2 +1,2 @@
 language: java
-script: ant -buildfile ./client-libraries/java/rest-client/build.xml src-jar
+script: ant -f ./client-libraries/java/rest-client/build.xml src-jar
