@@ -1,6 +1,4 @@
-[![Build Status](https://travis-ci.org/kroikie/gcm.svg?branch=master)](https://travis-ci.org/kroikie/gcm)
-
-# Google Cloud Messaging
+# Google Cloud Messaging [![Build Status](https://travis-ci.org/kroikie/gcm.svg?branch=master)](https://travis-ci.org/kroikie/gcm)
 
 Google Cloud Messaging (GCM) is a service that lets developers send data from
 servers to users' devices, and receive messages from devices on the same
