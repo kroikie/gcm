@@ -24,6 +24,13 @@
             <organizationUrl>https://google.com</organizationUrl>
         </developer>
     </developers>
+    <distributionManagement>
+      <!-- override the parent's directory to point to the canonical place, and use https. -->
+      <snapshotRepository>
+        <id>ossrh</id>
+        <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+      </snapshotRepository>
+    </distributionManagement>
     <scm>
         <connection>scm:git:git@github.com:google/gcm.git</connection>
         <developerConnection>scm:git:git@github.com:google/gcm.git</developerConnection>
