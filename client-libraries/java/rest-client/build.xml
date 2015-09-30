@@ -140,6 +140,7 @@
       <arg value="-DpomFile=pom.xml" />
       <arg value="-Dfile=${jar}" />
       <arg value="-Dsettings=settings.xml" />
+      <art value="-Dlib=lib"
       <arg value="-e" />
     </artifact:mvn>
   </target>
