@@ -1,2 +1,9 @@
 language: java
 script: "ant -f ./client-libraries/java/rest-client/build.xml src-jar"
+
+after_success:
+  - echo i am working
+
+branches:
+  only:
+    - master
