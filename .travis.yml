@@ -6,7 +6,7 @@ env:
     secure: "pxSdrv70+H4Y9CfSt5MpkgRDyhm6hNUMeKte2o6wdXQrHmo4jznA87de3cvBV++eYYcqCycG+3cytEQhas4gksRXnXoXcj78Le+PNEr428OmvRUEDtoZJS7CuFKRLZP0g/ekhMSp7j8sVfgM7GDCO9uOJNsu07q9GPOpKhOsU8yCmlc7LMvDmkRPBEZYnkUFEhdBXdrY+khP1k/4HOAczYd/Kl5kNxhrq1T2kd8zkYUtFQ1tEef9bAUGsjIwaE9iTftvE7Bg6SDO6X/7+PDzay7aKZ/FCkDrRg55PaAfpTeHfKX+hXhTgnXt+EudWjFQUbJM46sSpUbZqHiBTPvZYOKnoEz7Z8dsPIZBK3ejCZSdADLyUPJc8S8ge0919Ork5graK49FK14lKP77+w7hdjyo0WFjGK0xze5lH5is1K1xxIOH1mmqb9z2mUJfDzJ5/MPxJoEbOUPHX+ETIm5DhVe0ZNH2Zsk3ybHEiqgoUJzc+PoczpLFOawwq61VwC4363awOtZUl4PrP6E1YwQAnMOkJni/3Et/+to7mAL4Ngc1Ow/o8J6z689A0coSQoaiOtIRKF2QbJU4dQm8W0v9OMNuG3o76Hmjs7jg1AQC1pa71k3foC+gQUpyH2yAehP9qLjzpKmFAMGiqqYeGKoA6xJGbT3ItuEyKWxyN7xHIAU="
 
 after_success:
-  - echo ${me} 
+  - echo ${env.me} 
 
 branches:
   only:
