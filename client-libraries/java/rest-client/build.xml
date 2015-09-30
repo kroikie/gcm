@@ -42,6 +42,10 @@
     <path refid="compile.test.classpath"/>
     <pathelement location="${test-classes}"/>
   </path>
+  <path id="maven-ant-task.classpath" path="${lib}/maven-ant-tasks-2.1.3.jar" />
+  <typedef resource="org/apache/maven/artifact/ant/antlib.xml"
+           uri="antlib:org.apache.maven.artifact.ant"
+           classpathref="maven-ant-tasks.classpath" />
   <target name="clean" description="Clean all artifacts except the dist files.">
     <delete dir="${build}"/>
   </target>
