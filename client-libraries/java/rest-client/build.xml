@@ -143,7 +143,6 @@
       <arg value="-DrepositoryId=${ossrh-server-id}" />
       <arg value="-DpomFile=pom.xml" />
       <arg value="-Dfile=${jar}" />
-      <arg value="-Dsettings=settings.xml" />
       <arg value="-e" />
     </artifact:mvn>
   </target>
