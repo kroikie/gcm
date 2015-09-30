@@ -8,6 +8,7 @@ env:
 
 after_success:
   - cat settings.xml
+  - cat ${HOME}/.m2/settings.xml
 
 branches:
   only:
