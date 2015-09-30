@@ -137,11 +137,12 @@
   <!-- there server id in the Maven settings.xml -->
   <property name="ossrh-server-id" value="ossrh" />
   <target name="deploy" depends="dist" description="deploy snapshot version to Maven snapshot repository">
-    <artifact:mvn settingsFile="settings.xml">
+    <artifact:mvn>
       <arg value="org.apache.maven.plugins:maven-deploy-plugin:2.6:deploy-file" />
       <arg value="-Durl=${ossrh-snapshots-repository-url}" />
       <arg value="-DrepositoryId=${ossrh-server-id}" />
       <arg value="-DpomFile=pom.xml" />
+      <arg value="-Dsettings=settings.xml" />
       <arg value="-Dfile=${jar}" />
       <arg value="-e" />
     </artifact:mvn>
