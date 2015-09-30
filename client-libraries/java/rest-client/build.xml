@@ -24,7 +24,7 @@
   <property name="test-classes" location="${build}/test-classes"/>
   <property name="test-reports" location="${build}/test-reports"/>
   <property name="dist"  location="dist"/>
-  <property name="jar" value="${dist}/gcm-server-1.0.0.jar"/>
+  <property name="jar" value="${dist}/gcm-server-1.0-SNAPSHOT.jar"/>
   <property name="src-jar" value="${dist}/gcm-server-1.0.0-sources.jar"/>
   <property name="javadoc-jar" value="${dist}/gcm-server-doc.jar"/>
   <property name="demo-dir" value="${basedir}/../samples/gcm-demo-server"/>

@@ -9,8 +9,8 @@ env:
 after_success:
   - echo ${env.CI_DEPLOY_USERNAME}
   - echo ${CI_DEPLOY_USERNAME}
-  - echo ${env.CI_DEPLOY_USERNAME}
-  - echo ${CI_DEPLOY_USERNAME}
+  - echo ${env.CI_DEPLOY_PASSWORD}
+  - echo ${CI_DEPLOY_PASSWORD}
 
 branches:
   only:
