@@ -1,5 +1,5 @@
 language: java
-script: "ant -f ./client-libraries/java/rest-client/build.xml --settings settings.xml"
+script: "ant -f ./client-libraries/java/rest-client/build.xml"
 
 env:
   global:
