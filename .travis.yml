@@ -9,8 +9,8 @@ env:
 after_success:
   - cat settings.xml
   - cat ${HOME}/.m2/settings.xml
-  - echo ${env.CI_DEPLOY_USERNAME}
   - echo ${CI_DEPLOY_USERNAME}
+  - echo ${CI_DEPLOY_PASSWORD}
 
 branches:
   only:
