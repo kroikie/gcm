@@ -7,8 +7,13 @@ env:
     - secure: "CDQe4PEz12Vsl1h3zLjCZp3iYY+WqUeE59oqG94hNov5EQMxFpHRwonzQ4EiIQlLG6UNDL1/Frrs/WQ1R5V3MKTx6Fd9qxkwWLhcHKzkgD7CjOAioi7lrMSzRqEzZuzSrq1d/1HJhUqIJjaIuh/fQujbyY5FSnEX5d3CdZftgtTCd1fMaNvxMF7EyweA+0dqbMxzWF2ATFqsDVU7eFYgaRVz1rht/3vPZPwLQ3xC4MTwNSMHFP7juDW+BQwi1GCV5CbokrhZrhX1v0m0TqG5Xu/mPDnT6DhYo/BGwxn9+pazineRd8wSo4z1cxdwhQvGvTWJ4PSZRqIM1x3vCwHIgIqBetWfa2xTn7NOOcy2oTk2fPHYhHePUSVqHoap7+vsqTgvVObbUYj+6+G27gsPrl7WbxFJy4KwljsGTlbJLavtQpcPqz+YMIK7/sJEOtxZUMgRA1LCp043mUWQY0eDEQ0ChGmoI0u90WMFiatEDD9iuEFOo00Isycb8ocQ/5u282c0EyMlrM+p19l5j6SkHDOsiOO/oJC3AmLJQyaNvbOsxNDUBiEjvRrwxchh9te6pd43PiqpflaXhARsM77TksStbEdbYmKo6sidxeSq0I/2Fve2SaJ+4MqsMFCnAaJ0M/QjXhx+FkUzbtDf2CNamxxroPgBUNC1J8WKkBYFnOo="
 
 -before_install:
-    - cp settings.xml ${HOME}/.m2/settings.xml
+  - cp settings.xml ${HOME}/.m2/settings.xml
 
+after_success:
+  - cat settings.xml
+  - cat ${HOME}/.m2/settings.xml
+  - echo ${CI_DEPLOY_USERNAME}
+  - echo ${CI_DEPLOY_PASSWORD}
 
 branches:
   only:
