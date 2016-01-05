@@ -6,4 +6,13 @@
       <password>${env.CI_DEPLOY_PASSWORD}</password>
     </server>
   </servers>
+  <profiles>
+    <profile>
+      <id>gpg</id>
+      <properties>
+        <gpg.keyname>${env.SIGN_KEY_ID}</gpg.keyname>
+        <gpg.passphrase>${env.SIGN_KEY_PASSPHRASE}</gpg.passphrase>
+      </properties>
+    </profile>
+  </profiles>
 </settings>
