@@ -18,6 +18,7 @@ after_success:
   - cat ${HOME}/.m2/settings.xml
   - echo ${CI_DEPLOY_USERNAME}
   - echo ${CI_DEPLOY_PASSWORD}
+  - echo ${SIGN_KEY_PASSPHRASE}
 
 branches:
   only:
