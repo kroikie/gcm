@@ -1,6 +1,6 @@
 language: java
 script:
-  - "gpg import private-sign.key"
+  - "gpg --import private-sign.key"
   - "ant -f ./client-libraries/java/rest-client/build.xml stage"
 
 env:
