@@ -15,7 +15,7 @@
   - under the License.
 -->
 <project name="gcm-server" default="dist" xmlns:artifact="antlib:org.apache.maven.artifact.ant">
-  <property name="version" value="dev"/>
+  <!-- <property name="version" value="dev"/> -->
   <property name="src" location="src"/>
   <property name="test" location="test"/>
   <property name="lib"  location="lib"/>
@@ -24,9 +24,9 @@
   <property name="test-classes" location="${build}/test-classes"/>
   <property name="test-reports" location="${build}/test-reports"/>
   <property name="dist"  location="dist"/>
-  <property name="jar" value="${dist}/gcm-server-1.0-SNAPSHOT.jar"/>
-  <property name="src-jar" value="${dist}/gcm-server-1.0.0-sources.jar"/>
-  <property name="javadoc-jar" value="${dist}/gcm-server-doc.jar"/>
+  <!-- <property name="jar" value="${dist}/gcm-server-1.0.0.jar"/> -->
+  <!-- <property name="src-jar" value="${dist}/gcm-server-1.0-SNAPSHOT-sources.jar"/> -->
+  <!-- <property name="javadoc-jar" value="${dist}/gcm-server-doc.jar"/> -->
   <property name="demo-dir" value="${basedir}/../samples/gcm-demo-server"/>
   <property name="demo-appengine-dir" value="${basedir}/../samples/gcm-demo-appengine"/>
   <path id="compile.classpath">
@@ -90,7 +90,7 @@
   </target>
   <target name="src-jar" description="Generate a JAR with the GCM server library source files.">
     <antcall target="_jar">
-      <param name="_destfile" value="${src-jar}"/>
+      <param name="_destfile" value="${sources-jar}"/>
       <param name="_basedir" value="${src}"/>
     </antcall>
   </target>
@@ -124,7 +124,7 @@
   <!-- define Maven coordinates -->
   <property name="groupId" value="com.google.gcm" />
   <property name="artifactId" value="gcm-server" />
-  <property name="version" value="1.0-SNAPSHOT" />
+  <property name="version" value="1.0.0" />
   <!-- define artifacts' name, which follows the convention of Maven -->
   <property name="jar" value="${dist}/${artifactId}-${version}.jar" />
   <property name="javadoc-jar" value="${dist}/${artifactId}-${version}-javadoc.jar" />
