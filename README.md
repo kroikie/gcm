@@ -1,4 +1,4 @@
-# Google Cloud Messaging
+# Google Cloud Messaging <img src="https://travis-ci.org/google/gcm.svg?branch=master"/>
 
 Google Cloud Messaging (GCM) is a service that lets developers send data from
 servers to users' devices, and receive messages from devices on the same
