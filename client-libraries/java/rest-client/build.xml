@@ -16,7 +16,6 @@
 -->
 <project name="gcm-server" default="dist" xmlns:artifact="antlib:org.apache.maven.artifact.ant">
 
-  <property name="version" value="dev"/>
   <property name="src" location="src"/>
   <property name="test" location="test"/>
   <property name="lib"  location="lib"/>
