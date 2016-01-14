@@ -11,7 +11,7 @@ env:
 before_install:
 - openssl aes-256-cbc -K $encrypted_b864812ff265_key -iv $encrypted_b864812ff265_iv
   -in sign.key.enc -out sign.key -d
-- gpg install sign.key
+- gpg --import sign.key
 - cp settings.xml ${HOME}/.m2/settings.xml
 after_success:
 - echo "deploy complete"
