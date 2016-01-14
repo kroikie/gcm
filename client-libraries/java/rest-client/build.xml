@@ -116,7 +116,7 @@
   </target>
 
   <target name="doc" depends="compile, tests" description="generate documentation">
-    <javadoc sourcepath="${src}" destdir="${javadoc-jar}">
+    <javadoc sourcepath="${src}" destdir="${dist}/javadoc">
       <classpath>
         <fileset dir="${lib}">
           <include name="json_simple-1.1.jar"/>
