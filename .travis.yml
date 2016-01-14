@@ -1,7 +1,6 @@
 language: java
 script:
-- ant -f ./client-libraries/java/rest-client/build.xml -lib ./client-libraries/java/rest-client/lib
-  stage
+- ./build.sh
 env:
   global:
   - secure: tPGlEcDhJ+59UI1R144eDGHs9v6hU86dq6FWJW2n6ggDxy9AUj0uQinNSWxHrFTFRlBbcm9tZ/eezvs0MIAl00FZk4OhSnLJNAXhRBwGhoSQglsNa9Bkmhko3O6f6PjBv2UsakhAK5o5Sgc+4cmHA6LAGPEze+0xvTVtG7KdhWt/uCzAhAXMVcHozMDH4ybVCmpDb43soWGHc6O9NXafGmFqW5iQ29I1lum1H5nw1W69VTXXlt2nmVtYGb/V2EyTTVIfX2KyCa9ZBQP8sIo5NhFmEb/vwI5aMCtDewXbyHrLpcD/pWLm1kmGWRA6WvLAbVIZPEsco5HKe9K9HwtK0SZYOzbw0nsRfDaM6ihI2xV7AYkc//eHm45ausQ2KiLj3b3zE+hSp1cByAw11J6W1uPCoVsCcpnzUUxfG1ST7WTVgJHaIIOcCgQwjyQkgOt4qIhjSrS7DfPDy9on0S2d3wp2aOJ99OaX7GPd9QWAIojGpjURG7RUA0vvfj9MHabvBFuaf20El4v7jnXW6QsvxeZE8u68mclvUyoX2/78tawsauaRknkXcJtYT8UNTJ8x5mb1xfmhf10Iw2XhJXoid1O2mmH82KKHJkRDJCDK/vF5TD7ocEGGHBkB8SkPxlCpTFdrXGfG11TtFpCz+RhJUDAbe/7ubzCLY7ui9Nl240k=
@@ -18,4 +17,3 @@ after_success:
 branches:
   only:
   - master
-  - /^v/
