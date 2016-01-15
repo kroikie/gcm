@@ -1,5 +1,6 @@
 #!/bin/bash
 tagLen=${#TRAVIS_TAG}
+echo $TRAVIS_PULL_REQUEST
 if [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
   if [ $tagLen -gt 0 ]; then
     echo "tagged so deploy"
