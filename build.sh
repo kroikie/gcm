@@ -1,5 +1,5 @@
 #!/bin/bash
-tagLen=${#$TRAVIS_TAG}
+tagLen=${#TRAVIS_TAG}
 if [ $tagLen -gt 0 ]; then
   echo "tagged so deploy"
   ant -f ./client-libraries/java/rest-client/build.xml -lib ./client-libraries/java/rest-client/lib deploy
