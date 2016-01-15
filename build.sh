@@ -1,6 +1,7 @@
 #!/bin/bash
 tagLen=${#TRAVIS_TAG}
-if [ "${TRAVIS_PULL_REQUEST}" == "false" ]; then
+echo $TRAVIS_PULL_REQUEST
+if [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
   if [ $tagLen -gt 0 ]; then
     echo "tagged so deploy"
     openssl aes-256-cbc -K $encrypted_b864812ff265_key -iv $encrypted_b864812ff265_iv -in sign.key.enc -out sign.key -d
